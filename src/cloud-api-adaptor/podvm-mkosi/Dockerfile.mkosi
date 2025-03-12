@@ -6,7 +6,8 @@ ARG PROFILE="debug"
 
 RUN dnf install -y \
 	bubblewrap \
-	git
+	git \
+	python3
 
 RUN mkdir -p /build
 WORKDIR /build
